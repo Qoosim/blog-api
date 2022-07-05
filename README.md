@@ -33,9 +33,9 @@ All Users Page
 
  - Prerequisites
 
-Ruby: 2.7.1
+Ruby: 2.5.0
 Rails: 5.2.4
-Postgres: >=9.5
+Postgres: >=12.11
 
 - Install necessary gems with:
 ``` 
@@ -72,7 +72,7 @@ Visit `http://localhost:3000/` in your browser to play around the app.
 ## 🛠️ Built With
 
 This project was built with Ruby on Rails
-* [Ruby](https://www.ruby-lang.org/en/) v2.7.1
+* [Ruby](https://www.ruby-lang.org/en/) v2.5.0
 * [Rails](https://rubyonrails.org/) v5.2.4
 
 Additional gems used
