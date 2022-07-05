@@ -1,0 +1,17 @@
+current directory: /home/qoosim/microverse/blog-api/vendor/bundle/ruby/2.5.0/gems/racc-1.6.0/ext/racc/cparse
+/home/qoosim/.rvm/rubies/ruby-2.5.0/bin/ruby -I /home/qoosim/.rvm/rubies/ruby-2.5.0/lib/ruby/site_ruby/2.5.0 -r ./siteconf20220705-13649-h8gift.rb extconf.rb
+checking for rb_block_call()... yes
+checking for rb_ary_subseq()... yes
+creating Makefile
+
+current directory: /home/qoosim/microverse/blog-api/vendor/bundle/ruby/2.5.0/gems/racc-1.6.0/ext/racc/cparse
+make "DESTDIR=" clean
+
+current directory: /home/qoosim/microverse/blog-api/vendor/bundle/ruby/2.5.0/gems/racc-1.6.0/ext/racc/cparse
+make "DESTDIR="
+compiling cparse.c
+linking shared-object racc/cparse.so
+
+current directory: /home/qoosim/microverse/blog-api/vendor/bundle/ruby/2.5.0/gems/racc-1.6.0/ext/racc/cparse
+make "DESTDIR=" install
+/usr/bin/install -c -m 0755 cparse.so ./.gem.20220705-13649-1g2phu5/racc
