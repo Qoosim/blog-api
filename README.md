@@ -1,8 +1,6 @@
-# 🔐 Social Media - Rolling My Own Social Media
+# 🔐 Blog app: add API endpoints
 
-This project is part of series of projects to be completed by students of [Microverse](https://www.microverse.org/).
-
-In this project, I modified the forked repository <b><i>Social Media</i></b> in a way that a new user can create an account, sign in to his or her acount. A signed in user can view other users' posts, create posts, comment and likes on them. A user can send a friend request, cancel a friend request and confirm a friend request sent by another user.
+> In this project I create API endpoints that allow users to interact with Social app. The users must be authenticated first.
 
 ***********
 
@@ -13,89 +11,95 @@ Signup Page
 Login Page
   ![Login](previews/login_page.png)
 
-Current User Page
-  ![Current](previews/current_user_page.png)
-
-User Timeline Page
-  ![User Timeline](previews/user_timeline.png)
-
-Not Current User Page
-  ![Not Current](previews/not_current_user_profile.png)
-
-All Users Page
-  ![All Users](previews/all_users.png)
-
-## 🚚 Live Demo 
-
-* [Social Media App](https://so-me-app.herokuapp.com)
-
-## 🛠️ How to run the App
-
- - Prerequisites
-
-Ruby: 2.5.0
-Rails: 5.2.4
-Postgres: >=12.11
-
-- Install necessary gems with:
-``` 
-    bundle install
-```
-- Setup database with:
-
-```
-    rails db:create
-    rails db:migrate
-    rails db:seed
-```
-
-- Start server with:
-    
-```
-    rails server
-```
-
-Visit `http://localhost:3000/` in your browser to play around the app.
-
-## 🎉 Features
-
-* New Users can create an account
-* Users can log into the app
-* Not logged in users can't access any post
-* Logged in users can create new posts
-* logged in users can comment and like any post
-* Logged in users can send friend request to any user
-* Logged in users can accept or reject friend requests
-* Logged in users can cancel friend request sent
-* User profile shows posts created by the user
 
 ## 🛠️ Built With
 
-This project was built with Ruby on Rails
-* [Ruby](https://www.ruby-lang.org/en/) v2.5.0
-* [Rails](https://rubyonrails.org/) v5.2.4
+  - Ruby: 2.5.0
+  - Rails: 5.2.4
+  - Postgres: >=12.11
 
-Additional gems used
-* Bootstrap v4.0
-* [DatabaseCleaner](https://github.com/DatabaseCleaner/database_cleaner)
-* [Shoulda Matchers](https://github.com/thoughtbot/shoulda-matchers)
-* [Capybara](https://github.com/teamcapybara/capybara)
+## 🛠️ How to run the App
+
+- Prerequisites
+
+  - Ruby: 2.5.0
+  - Rails: 5.2.4
+  - Postgres: >=12.11
+
+
+## 🛠️ Getting Started
+
+To get a local copy up and running follow these simple example steps.
+
+1. Open Terminal.
+2. Navigate to your desired location to download the contents of this repository.
+3. Clone this repository: 
+```
+  git clone https://github.com/Qoosim/blog-api.git
+```
+4. Run 
+```
+  cd blog-api
+```
+
+## 🛠️ Setup
+
+- Instal necessary gems with:
+
+```
+  bundle install
+```
+
+- Setup database with:
+
+```
+   rails db:create
+   rails db:migrate
+```
+
+## 🕹️ Usage
+
+- Navigate to the root directory of the project
+- Run 
+```
+  rails server
+```
+- Open a browser and visit 
+```
+ `http://localhost:3000/` or 127.0.0.1:3000
+```
+- Sign in or sign up to create events!
+
+## 🧪 Testing
+
+- Run
+```
+  rspec -f -d
+```
+
+## 🎉 Features
+
+### API endpoint to list all posts for a user
+  - http://localhost:3000/api/users/user_id/posts
+
+### API endpoint to list all comments for a post
+  - http://localhost:3000/api/users/user_id/posts/post_id/comments
+
+### API endpoint to add a comment to a post
+  - http://localhost:3000/api/users/user_id/posts/post_id/comments
+
 
 ## 🧪 Testing
 ```
     rpsec
 ```
 
-* Rspec model testing done for validations and associations
-* Rspec controller testing for behaviour
-* Rspec - Capybara testing for features
-
 ## 🕹️ Contributions, Issues & Forking
 
-If you have any issues setting up the project or you come across any unintended bugs or problems, please do submit an issue to the [Social Media](https://github.com/Qoosim/ror-social-scaffold/issues) page.
+If you have any issues setting up the project or you come across any unintended bugs or problems, please do submit an issue to the [Blog-API](https://github.com/Qoosim/blog-api/issues) page.
 
 If you want to make your own changes, modifications or improvements to this project, go ahead and Fork it!
-1. [Fork it](https://github.com/Qoosim/ror-social-scaffold/fork)
+1. [Fork it](https://github.com/Qoosim/blog-api/fork)
 2. Create your working branch (git checkout -b [choose-a-name])
 3. Commit your changes (git commit -am 'what this commit will fix/add/improve')
 4. Push to the branch (git push origin [chosen-name])

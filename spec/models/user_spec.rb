@@ -16,7 +16,7 @@ RSpec.describe(User, type: :model) do
     it { should have_many(:friends) }
     it { should have_many(:pending_friendships) }
     it { should have_many(:pending_friends) }
-    it { should have_many(:friend_requests) }
+    it { should have_many(:friend_request) }
   end
 
   context 'Validations' do
