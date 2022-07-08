@@ -91,10 +91,6 @@ To get a local copy up and running follow these simple example steps.
 ### For API Documentation
   - visit `` http://localhost:3000/api-docs ``
 
-## 🧪 Testing
-```
-    rpsec
-```
 
 ## 🕹️ Contributions, Issues & Forking
 
