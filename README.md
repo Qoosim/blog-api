@@ -88,6 +88,8 @@ To get a local copy up and running follow these simple example steps.
 ### API endpoint to add a comment to a post
   - http://localhost:3000/api/users/user_id/posts/post_id/comments
 
+### For API Documentation
+  - visit `` http://localhost:3000/api-docs ``
 
 ## 🧪 Testing
 ```

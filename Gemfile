@@ -36,6 +36,8 @@ gem 'bootstrap-sass'
 
 gem 'simple_token_authentication'
 
+gem 'rswag'
+
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
@@ -45,6 +47,8 @@ gem 'bootsnap', require: false
 gem 'devise'
 
 group :development, :test do
+  gem 'rspec-rails'
+  gem 'rswag-specs'
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: %i[mri mingw x64_mingw]
 end
@@ -54,7 +58,7 @@ group :test do
   # Add support for rails Rspec
   gem 'capybara'
   gem 'rails-controller-testing'
-  gem 'rspec-rails'
+  # gem 'rspec-rails'
   gem 'selenium-webdriver'
   gem 'shoulda'
   gem 'shoulda-matchers'

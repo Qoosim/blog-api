@@ -1,6 +1,10 @@
 Rails.application.routes.draw do
 
+  mount Rswag::Ui::Engine => '/api-docs'
+  mount Rswag::Api::Engine => '/api-docs'
+
   root 'posts#index'
+
   get 'friendships', to: 'friendships#index'
   patch 'friendships', to: 'friendships#confirm', as: 'confirm'
   delete 'friendships', to: 'friendships#destroy', as: 'notfriend'
